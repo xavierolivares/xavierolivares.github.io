@@ -1,8 +1,8 @@
 let score = sessionStorage.getItem('score') || 0;
 let scoreUp = document.getElementById('score');
-
 let holes = Array.from(document.getElementsByClassName('hole'));
 
+scoreUp.innerText = score;
 
 function newHole () {
     let randomHole = Math.floor(Math.random() * 9);
