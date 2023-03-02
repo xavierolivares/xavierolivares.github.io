@@ -1,4 +1,4 @@
-let score = 0;
+let score = sessionStorage.getItem('score') || 0;
 let scoreUp = document.getElementById('score');
 
 let holes = Array.from(document.getElementsByClassName('hole'));
@@ -18,5 +18,6 @@ gameArea.addEventListener('click', function(clickEvent) {
         target.classList.toggle('mole');
         score++;
         scoreUp.innerText = score;
+        sessionStorage.setItem('score', score);
     }
 });
