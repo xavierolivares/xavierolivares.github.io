@@ -21,8 +21,14 @@ gameArea.addEventListener('click', function(clickEvent) {
         target.classList.toggle('mole');
         score++;
         scoreUp.innerText = score;
+
+        /* Track the score within the same visit. */
         sessionStorage.setItem('score', score);
-        setCookie('cookie_score', score);
+
+        /* If we have received consent within the past day, save the score on the cookie. */
+        if (cookieConsent) {
+            setCookie('cookie_score', score);
+        }
     }
 });
 
