@@ -1,5 +1,6 @@
 
 body {
+  background-color: lightcyan;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -41,11 +42,14 @@ body {
 }
 
 .cookie-consent-section {
-  background-color: lightcoral;
   color: darkred;
   font-weight: bold;
   height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+#cookie-consent-button {
+  background-color: yellow;
 }

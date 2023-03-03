@@ -6,56 +6,68 @@
     <script src="index.js" defer></script>
   </head>
   <body> 
-    <h1>Whack-a-mole! Track your score:
+    <h1>Whack-a-mole!</h1>
+    <h2>Track your score:
       <span id="score">0</span>
-    </h1>
-    <div id="whack-a-mole">
-      <div class="hole"></div>
-      <div class="hole"></div>
-      <div class="hole"></div>
-      <div class="hole"></div>
-      <div class="hole"></div>
-      <div class="hole"></div>
-      <div class="hole"></div>
-      <div class="hole"></div>
-      <div class="hole"></div>
-    </div>
-    <div class="disclaimer-section">
-      <ul class="disclaimer-list">
-        <li class="original-disclaimer list-items">The original version of this game was provided by <a href="https://www.fullstackacademy.com/" target="_blank">Fullstack Academy</a>.
-          <ul class="sub-disclaimer-list">
-            <li class="sub-list-items">
-              It tracked your score on the same page view.
-            </li>
-            <li class="sub-list-items">
-              If you refreshed the page, you'd lose your score.
-            </li>
-          </ul>
-        </li>
-        <li class="session-disclaimer list-items">Currently, your score is tracked through <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage" target="_blank">sessionStorage</a>.
-          <ul class="sub-disclaimer-list">
-            <li class="sub-list-items">
-              With sessionStorage, we can keep tracking your score even if you refresh the page.
-            </li>
-            <li class="sub-list-items">
-              However, if you open this page on a new tab, the score gets reset back to zero.
-            </li>
-          </ul>
-        </li>
-        <li class="cookie-disclaimer list-items">To fix this, we can track your score across tabs using <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies" target="_blank">cookies</a>!
-          <ul class="sub-disclaimer-list">
-            <li class="sub-list-items">
-              This means that you can open a new tab and your score will be saved.
-            </li>
-            <li class="sub-list-items">
-              <b>Note</b>: This will only work through regular browser sessions and not incognito mode.
-            </li>
-          </ul>
-        </li>
-      </ul>
-      <div class="cookie-consent-section">
-        <button id="cookie-consent-button">Click here to track your score on the cookie for a day.</button>
+    </h2>
+    <div class="primary-container">
+      <div id="whack-a-mole">
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
       </div>
     </div>
+    <div class="secondary-container">
+      <div class="disclaimer-section">
+        <ul class="disclaimer-list">
+          <li class="original-disclaimer list-items">The original version of this game was provided by <a href="https://www.fullstackacademy.com/" target="_blank">Fullstack Academy</a>.
+            <ul class="sub-disclaimer-list">
+              <li class="sub-list-items">
+                It tracked your score on the same page view.
+              </li>
+              <li class="sub-list-items">
+                If you refreshed the page, you'd lose your score.
+              </li>
+            </ul>
+          </li>
+          <li class="session-disclaimer list-items">Currently, your score is tracked through <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage" target="_blank">sessionStorage</a>.
+            <ul class="sub-disclaimer-list">
+              <li class="sub-list-items">
+                With sessionStorage, we can keep tracking your score even if you refresh the page.
+              </li>
+              <li class="sub-list-items">
+                However, if you open this page on a new tab, the score gets reset back to zero.
+              </li>
+            </ul>
+          </li>
+          <li class="cookie-disclaimer list-items">To fix this, we can track your score across tabs using <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies" target="_blank">cookies</a>!
+            <ul class="sub-disclaimer-list">
+              <li class="sub-list-items">
+                This means that you can open a new tab and your score will be saved.
+              </li>
+              <li class="sub-list-items">
+                <b>Note</b>: This will only work through regular browser sessions and not incognito mode.
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <div class="cookie-consent-section">
+          <button id="cookie-consent-button">Click here to track your score on the cookie for a day.</button>
+        </div>
+      </div>
+      <div>
+        <img src="images/psyduck_cry.png">
+      </div>
+    </div>
+    <!-- <div>
+      <img src="images/psyduck.png">
+      <img src="images/shiny_psyduck.png">
+    </div> -->
   </body>
 </html>
