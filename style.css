@@ -40,7 +40,7 @@ body {
   flex-wrap: wrap;
 }
 
-#cookie-consent-button {
+.cookie-consent-section {
   background-color: lightcoral;
   color: darkred;
   font-weight: bold;
