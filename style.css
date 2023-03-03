@@ -10,6 +10,10 @@ body {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+.main-container {
+  display: flex;
+  flex-direction: row;
+}
 #whack-a-mole {
   background-color: khaki;
   border: solid 20px darkolivegreen;
@@ -52,4 +56,17 @@ body {
 
 #cookie-consent-button {
   background-color: yellow;
+  border-radius: 1ch;
+}
+
+.original-disclaimer, .session-disclaimer, .cookie-disclaimer {
+  list-style-type: none;
+}
+
+.list-items {
+  padding: 5px;
+  margin: 10px;
+  background-color: aliceblue;
+  border: 1px black solid;
+  border-radius: 1ch;
 }
