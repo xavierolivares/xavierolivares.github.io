@@ -27,23 +27,37 @@
               It tracked your score through the same page view.
             </li>
             <li>
-              This meant that, if you refreshed the page, you'd lose your score.
+              You'd lose your score if you refreshed the page.
             </li>
           </ul>
         </li>
         <li class="session-disclaimer">Currently, your score is tracked through <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage">sessionStorage</a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage">.
           <ul>
             <li>
-              Even if you refresh the page, your score stays the same.
+              You'd keep your score if you refresh the page.
             </li>
             <li>
-              However, if you open this page on a new tab, the score gets reset back to zero.
+              If you open this page on a new tab, the score gets reset back to zero.
             </li>
           </ul>
         </li>
-        <li class="cookie-disclaimer">With your permission, we can track your score across tabs using <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies">cookies</a href="">!</li>
+        <li class="cookie-disclaimer">To fix this, we can track your score across tabs using <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies">cookies</a href="">!
+          <ul>
+            <li>
+              This means that you can open a new tab and your score will be saved.
+            </li>
+            <li>
+              This will only work through regular browser sessions and not incognito mode.
+            </li>
+            <li>
+              Some cookies can save your permissions for up to six months.
+            </li>
+          </ul>
+        </li>
       </ul>
-
+      <div>
+        <button id="cookie-consent">Click me to grant permission to track my score through the cookie for a day.</button>
+      </div>
     </div>
   </body>
 </html>
