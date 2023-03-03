@@ -50,7 +50,7 @@ function getCookie(cName) {
 }
 
 /* Apply setCookie */
-const cookieConsentButton = document.getElementById('cookie-consent');
+const cookieConsentButton = document.getElementById('cookie-consent-button');
 cookieConsentButton.addEventListener('click', function(clickEvent) {
     alert('Saving your score in the cookie!');
     setCookie('cookie_consent', true, 1);
