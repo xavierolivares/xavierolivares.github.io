@@ -5,13 +5,13 @@ body {
   justify-content: center;
   align-items: center;
   width: 100vw;
-  height: 100vh;
+  height: auto;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 #whack-a-mole {
-  background-color: skyblue;
-  border: solid 20px darkred;
+  background-color: lightgreen;
+  border: solid 20px darkolivegreen;
   padding: 20px;
   width: 360px;
   display: flex;
@@ -27,6 +27,25 @@ body {
 }
 
 .mole {
-  background-image: url("images/mole.png");
+  background-image: url("images/diglett_1.png");
 }
 
+#score {
+  color: lightcoral;
+}
+
+.disclaimer-section, .cookie-consent-section {
+  width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#cookie-consent-button {
+  background-color: lightcoral;
+  color: darkred;
+  font-weight: bold;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
