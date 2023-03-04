@@ -37,12 +37,14 @@ let cookie_score = score;
 
 /* Set a Cookie */
 function setCookie(cName, cValue, expDays) {
-        let date = new Date();
-        date.setTime(date.getTime() + (expDays * 24 * 60 * 60 * 1000));
-        const expires = "expires=" + date.toUTCString();
-        document.cookie = cName + "=" + cValue + "; " + expires + "; path=/";
-        console.log('setCookie expires variable', expires);
-        console.log('setCookie document.cookie', document.cookie);
+    let date = new Date();
+    date.setTime(date.getTime() + (expDays * 24 * 60 * 60 * 1000));
+    const expires = "expires=" + date.toUTCString();
+    document.cookie = cName + "=" + cValue + "; " + expires + "; path=/";
+    console.log('setCookie expires variable', expires);
+    console.log('setCookie document.cookie', document.cookie);
+    /* resolve cookie expiration bug so it only updates with "cookie_consent" */
+    /* only set expiration on cookie consent button */
 }
 
 /* Get a Cookie */
