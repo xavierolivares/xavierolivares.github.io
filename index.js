@@ -27,7 +27,7 @@ gameArea.addEventListener('click', function(clickEvent) {
 
         /* If we have received consent within the past day, save the score on the cookie. */
         if (cookieConsent) {
-            setCookie('cookie_score', score);
+            setCookie('cookie_score', score, 1);
         }
     }
 });
@@ -41,6 +41,8 @@ function setCookie(cName, cValue, expDays) {
         date.setTime(date.getTime() + (expDays * 24 * 60 * 60 * 1000));
         const expires = "expires=" + date.toUTCString();
         document.cookie = cName + "=" + cValue + "; " + expires + "; path=/";
+        console.log('setCookie expires variable', expires);
+        console.log('setCookie document.cookie', document.cookie);
 }
 
 /* Get a Cookie */

@@ -14,9 +14,11 @@ h1, h2 {
   display: flex;
   justify-content: center;
 }
+
 .primary-container {
   display: flex;
   flex-direction: row;
+  margin-bottom: 20px;
 }
 
 @media only screen and (max-width: 900px) {
@@ -70,6 +72,7 @@ h1, h2 {
   align-items: center;
   justify-content: center;
   padding-left: 40px;
+  margin-bottom: 20px;
 }
 
 #cookie-consent-button {
@@ -91,4 +94,15 @@ h1, h2 {
   border: 3px darkolivegreen solid;
   box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.1);
   border-radius: 1ch;
+}
+
+.secondary-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.secondary-container img {
+  height: 50%;
+  width: 50%;
 }
