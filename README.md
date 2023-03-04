@@ -9,3 +9,7 @@
 * To fix this, we can track your score across tabs using [cookies](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies)!
     * This means that you can open a new tab and your score will be saved.
     * This will only work through regular browser sessions and not incognito mode.
+
+Possible todos:
+- revise cookie expiration date functionality
+- introduce test buttons and links to demo default, sessionStorage, and cookie storage
