@@ -7,7 +7,7 @@
   </head>
   <body> 
     <h1>Whack-a-mole!</h1>
-    <h2>Track your score:
+    <h2>Track your score -->
       <span id="score">0</span>
     </h2>
     <div class="primary-container">
@@ -22,21 +22,22 @@
         <div class="hole"></div>
         <div class="hole"></div>
       </div>
-    </div>
-    <div class="secondary-container">
       <div class="disclaimer-section">
         <ul class="disclaimer-list">
-          <li class="original-disclaimer list-items">The original version of this game was provided by <a href="https://www.fullstackacademy.com/" target="_blank">Fullstack Academy</a>.
+          <li class="original-disclaimer list-items">This game was introduced to me by <a href="https://www.fullstackacademy.com/" target="_blank">Fullstack Academy</a>.
             <ul class="sub-disclaimer-list">
               <li class="sub-list-items">
-                It tracked your score on the same page view.
+                It illustrates the usage of html, classes, javascript, and click listeners.
               </li>
               <li class="sub-list-items">
-                If you refreshed the page, you'd lose your score.
+                Clicking Diglett increases your score!
+              </li>
+              <li class="sub-list-items">
+                Due to the simplicity of the original game, you'd lose track of your score by refreshing the page.
               </li>
             </ul>
           </li>
-          <li class="session-disclaimer list-items">Currently, your score is tracked through <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage" target="_blank">sessionStorage</a>.
+          <li class="session-disclaimer list-items">To resolve that issue, your score is currently tracked through <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage" target="_blank">sessionStorage</a>.
             <ul class="sub-disclaimer-list">
               <li class="sub-list-items">
                 With sessionStorage, we can keep tracking your score even if you refresh the page.
@@ -46,10 +47,13 @@
               </li>
             </ul>
           </li>
-          <li class="cookie-disclaimer list-items">To fix this, we can track your score across tabs using <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies" target="_blank">cookies</a>!
+          <li class="cookie-disclaimer list-items">To track your scores across different tabs, we can use <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies" target="_blank">cookies</a>!
             <ul class="sub-disclaimer-list">
               <li class="sub-list-items">
                 This means that you can open a new tab and your score will be saved.
+              </li>
+              <li class="sub-list-items">
+                This is how marketers for most websites can track your behavior and serve you ads based on your user experience.
               </li>
               <li class="sub-list-items">
                 <b>Note</b>: This will only work through regular browser sessions and not incognito mode.
@@ -58,12 +62,12 @@
           </li>
         </ul>
         <div class="cookie-consent-section">
-          <button id="cookie-consent-button">Click here to track your score on the cookie for a day.</button>
+          <button id="cookie-consent-button">However, I won't track your score through the cookie automatically. Click here to give permission for a day</button>
         </div>
       </div>
-      <div>
-        <img src="images/psyduck_cry.png">
-      </div>
+    </div>
+    <div class="secondary-container">
+      <img src="images/shiny_psyduck.png">
     </div>
     <!-- <div>
       <img src="images/psyduck.png">
