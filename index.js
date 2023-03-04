@@ -63,4 +63,5 @@ cookieConsentButton.addEventListener('click', function(clickEvent) {
     alert('Tracking your score on the cookie!');
     setCookie('cookie_consent', true, 1);
     setCookie('cookie_score', cookie_score, 1);
+    cookieConsent = true;
 });
