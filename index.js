@@ -1,7 +1,8 @@
 let score = Number(getCookie('cookie_score') || sessionStorage.getItem('score')) || 0,
     scoreUp = document.getElementById('score'),
     holes = Array.from(document.getElementsByClassName('hole')),
-    cookieConsent = !!getCookie('cookie_consent') || false;
+    cookieConsent = !!getCookie('cookie_consent') || false,
+    expiration;
 
 /* Aligning visible and sessionStorage scores. */
 scoreUp.innerText = score;
@@ -37,11 +38,12 @@ let cookie_score = score;
 
 /* Set a Cookie */
 function setCookie(cName, cValue, expDays) {
-    let date = new Date();
+    let date = new Date(),
+        pathname = location.pathname;
     date.setTime(date.getTime() + (expDays * 24 * 60 * 60 * 1000));
-    const expires = "expires=" + date.toUTCString();
-    document.cookie = cName + "=" + cValue + "; " + expires + "; path=/";
-    console.log('setCookie expires variable', expires);
+    expiration = `expires=${date.toUTCString()}`;
+    document.cookie = `${cName}=${cValue}; ${expiration}; path=${pathname};`;
+    console.log('setCookie expires variable', expiration);
     console.log('setCookie document.cookie', document.cookie);
     /* resolve cookie expiration bug so it only updates with "cookie_consent" */
     /* only set expiration on cookie consent button */
